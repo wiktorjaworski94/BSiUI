@@ -1,0 +1,17 @@
+Trying to figure out the hash collision rozwal.to
+
+http://training.securitum.com/rozwal/crypto/4.php
+
+New thing for me - what i know so far (19:57)
+Hash collision happens when for example two strings hashed with certain key end up the same hash. Trying to reproduce it in hash.py
+
+OKAY, hashes cannot be cracked so ez, looking for alternate solution.
+
+https://repo.zenk-security.com/Techniques%20d.attaques%20%20.%20%20Failles/HTTP%20HEAD%20method%20trick%20in%20php%20scripts.pdf
+
+if(h($s1) === h($s2)) {
+      echo "Flaga: ".$flaga;
+
+Trzeba wykorzystac to, ze do porownania uzyty jest operator == a nie ===??
+Przeczytalem o : MAGIC HASHES
+https://www.whitehatsec.com/blog/magic-hashes/
